@@ -26,6 +26,9 @@ class CompanyRequest extends FormRequest
         return [
             //
             'name'=>'required|string',
+            'logo'=>'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'website'=>'required',
+            'email'=>'required|email'
         ];
     }
 }

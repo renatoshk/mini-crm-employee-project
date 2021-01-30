@@ -25,6 +25,11 @@ class UpdateEmployeeRequest extends FormRequest
     {
         return [
             //
+            'company'=>'sometimes|required',
+            'first_name'=>'sometimes|required|string',
+            'last_name'=>'sometimes|required|string',
+            'email'=>'sometimes|required|email',
+            'phone'=>'sometimes|required'
         ];
     }
 }

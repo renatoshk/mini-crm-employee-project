@@ -8,15 +8,6 @@
         <li class="nav-item d-none d-sm-inline-block">
             <a href="{{route('adm', app()->getLocale())}}" class="nav-link">Home</a>
         </li>
-         <li class="nav-item d-none d-sm-inline-block">
-           <languange-switcher
-                locale="{{ app()->getLocale() }}"
-                link-en="{{ route(Route::currentRouteName(), 'en') }}"
-                link-al="{{ route(Route::currentRouteName(), 'al') }}"
-            >
-            </languange-switcher>
-        </li>
-
     </ul>
 </nav>
 <!-- /.navbar -->

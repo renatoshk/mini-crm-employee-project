@@ -36,7 +36,7 @@
 <br>
 <!-- editimi e categories --> 
 <div class="col-sm-6">
-{!!Form::model($employee, ['method'=>'PATCH', 'action'=>['App\Http\Controllers\AdminEmployeesController@update', $employee->id,app()->getLocale()]]) !!}
+{!!Form::model($employee, ['method'=>'PATCH', 'action'=>['App\Http\Controllers\AdminEmployeesController@update',app()->getLocale(),$employee->id]]) !!}
 <div class="form-group">
   {!!Form::select('company', $companies, null, ['class'=>'form-control'])!!}
 </div>

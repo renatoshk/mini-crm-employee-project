@@ -80,7 +80,7 @@ class AdminEmployeesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateEmployeeRequest $request, $id)
+    public function update(UpdateEmployeeRequest $request,$languange, $id)
     {
         //
         $data = $request->all();
@@ -101,7 +101,7 @@ class AdminEmployeesController extends Controller
     {
         //
         $employee = Employee::findOrFail($id);
-        if($employee) {
+         if($employee) {
             $employee->delete();
             Session::flash('flash_message', 'Employee has been deleted!');
             return redirect()->route('companies.index', app()->getLocale());
