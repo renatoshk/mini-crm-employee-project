@@ -2,7 +2,7 @@
 
 namespace Tests\Unit;
 
-use PHPUnit\Framework\TestCase;
+use Tests\TestCase;
 use Iluminate\Foundation\Testing\withFaker;
 use Iluminate\Foundation\Testing\RefreshDatabase;
 class DatabaseTest extends TestCase
