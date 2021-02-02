@@ -43,7 +43,7 @@ CREATE TABLE `companies` (
 --
 
 INSERT INTO `companies` (`id`, `name`, `email`, `logo`, `website`, `created_at`, `updated_at`) VALUES
-(10, 'Shkulaku inc', 'anxhels@gmail.com', '1611938938logopizza.jpg', 'www.vintagepizzeria.com', '2021-01-29 15:48:58', '2021-01-29 22:35:41'),
+(10, 'Test', 'test@gmail.com', '1611938938logopizza.jpg', 'www.vintagepizzeria.com', '2021-01-29 15:48:58', '2021-01-29 22:35:41'),
 (17, 'test', 'test@gmail.com', '1611974351logopizza.jpg', 'www.test.co', '2021-01-30 01:25:24', '2021-01-30 01:39:11');
 
 -- --------------------------------------------------------
@@ -68,7 +68,7 @@ CREATE TABLE `employees` (
 --
 
 INSERT INTO `employees` (`id`, `company`, `first_name`, `last_name`, `email`, `phone`, `created_at`, `updated_at`) VALUES
-(9, 10, 'renato', 'shkulaku', 'shkulaku@gmail.com', '0695408391', '2021-01-29 23:19:07', '2021-01-29 23:19:07'),
+(9, 10, 'test', 'sh', 'test@gmail.com', '069', '2021-01-29 23:19:07', '2021-01-29 23:19:07'),
 (10, 17, 're', 'shkulakuu', 's@gmail.com', '06958655', '2021-01-30 01:30:12', '2021-01-30 01:37:41');
 
 -- --------------------------------------------------------
@@ -167,7 +167,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `role_id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 1, 'Renato Shkulaku', 'admin@admin.com', '2021-01-28 00:34:41', '$2y$10$D77qZf8apCGrrhttSbL.WeH0V.qVKObrnJz7DYG5C0K7DQ5HFQHv.', '12qwxrSDh0C1cwc2OT6NijVM58CS3DufAJX8PHozkmsT4mfBrI624zLrzLPz', '2021-01-28 00:34:41', '2021-01-28 00:34:41');
+(1, 1, 'test', 'admin@admin.com', '2021-01-28 00:34:41', '$2y$10$D77qZf8apCGrrhttSbL.WeH0V.qVKObrnJz7DYG5C0K7DQ5HFQHv.', '12qwxrSDh0C1cwc2OT6NijVM58CS3DufAJX8PHozkmsT4mfBrI624zLrzLPz', '2021-01-28 00:34:41', '2021-01-28 00:34:41');
 
 --
 -- Indexes for dumped tables
